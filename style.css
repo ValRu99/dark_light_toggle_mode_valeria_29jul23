@@ -47,7 +47,7 @@ h1 {
 .toggle-btn i {
   padding-left: 10px;
 }
-
-body .change-background {
+.change-background {
   color: #f5f5f5;
+  background-color: #000;
 }

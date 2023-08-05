@@ -6,10 +6,12 @@ $(document).ready(function(){
 
     // Toggle Button Text
     $("span").text(
-      $("span").text()== "Light Mode" ? "Dark Mode":"LightMode";
-    );
+      $("span").text()== "Light Mode" ? "Dark Mode":"LightMode"
+      );
+
   });
-  $("#toggle-button").click(function() {
-    $(this).find(i).toggleClass("fa-moon fa-sun")
-  });
+  $("#toggle-btn").click(function() {
+    let icon = $(this).find("ion-icon");
+    icon.attr("name") == "moon" ? icon.attr("name", "sunny") : icon.attr("name", "moon");
+  })
 });
